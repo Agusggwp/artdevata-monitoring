@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "ARTDEVATA",
+    "url": "https://artdevata.net/",
+    "status": "online",
+    "responseTime": 83,
+    "lastChecked": "2026-05-02T07:22:01.002Z",
+    "uptime": 100,
+    "checks": 28,
+    "failures": 0,
+    "history": [
+      {
+        "timestamp": "2026-05-02T07:22:01.002Z",
+        "status": "online",
+        "responseTime": 83
+      },
+      {
+        "timestamp": "2026-05-02T07:21:30.708Z",
+        "status": "online",
+        "responseTime": 81
+      },
+      {
+        "timestamp": "2026-05-02T07:21:00.465Z",
+        "status": "online",
+        "responseTime": 84
+      },
+      {
+        "timestamp": "2026-05-02T07:20:39.320Z",
+        "status": "online",
+        "responseTime": 112
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "PEDRA SAPACE",
+    "url": "https://pedracafe.com/",
+    "status": "online",
+    "responseTime": 84,
+    "lastChecked": "2026-05-02T07:22:01.005Z",
+    "uptime": 100,
+    "checks": 28,
+    "failures": 0,
+    "history": [
+      {
+        "timestamp": "2026-05-02T07:22:01.005Z",
+        "status": "online",
+        "responseTime": 84
+      },
+      {
+        "timestamp": "2026-05-02T07:21:30.710Z",
+        "status": "online",
+        "responseTime": 82
+      },
+      {
+        "timestamp": "2026-05-02T07:21:00.463Z",
+        "status": "online",
+        "responseTime": 80
+      },
+      {
+        "timestamp": "2026-05-02T07:20:39.321Z",
+        "status": "online",
+        "responseTime": 89
+      }
+    ]
+  }
+]

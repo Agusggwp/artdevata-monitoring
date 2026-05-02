@@ -77,11 +77,46 @@ function displayServices(services) {
                         ${uptimeHistory}
                     </div>
                 </div>
+                <div class="service-actions">
+                    <button class="btn-detail" onclick="showDetails(${service.id})">Detail</button>
+                </div>
+                <div id="history-${service.id}" class="service-history" style="display:none; padding:10px; background:#f8fafc; margin-top:8px;"></div>
             </div>
         </div>
     `;
     }).join('');
 }
+
+// Show service detail + recent history
+async function showDetails(id) {
+    const container = document.getElementById(`history-${id}`);
+    if (!container) return;
+    // toggle visibility
+    if (container.style.display === 'block') {
+        container.style.display = 'none';
+        return;
+    }
+
+    try {
+        const resp = await fetch(`/api/service/${id}`);
+        if (!resp.ok) throw new Error('Fetch failed');
+        const data = await resp.json();
+        const svc = data.service;
+
+        const items = svc.history && svc.history.length ? svc.history.slice(0, 10) : [];
+        container.innerHTML = `<strong>Recent checks (most recent first):</strong>` +
+            `<ul style="margin:8px 0; padding-left:18px;">
+                ${items.map(h => `<li>${new Date(h.timestamp).toLocaleString('id-ID')} — ${h.status} — ${h.responseTime ? h.responseTime + ' ms' : '-'} </li>`).join('')}
+            </ul>`;
+        container.style.display = 'block';
+    } catch (err) {
+        console.error('Error loading service details', err);
+        container.innerHTML = '<div style="color:#b91c1c">Gagal memuat detail</div>';
+        container.style.display = 'block';
+    }
+}
+
+// (Add/Delete UI handlers removed per user request)
 
 // Generate uptime history visualization (30 days)
 function generateUptimeHistory(currentUptime) {
@@ -145,3 +180,5 @@ setInterval(fetchStatus, 5000);
 
 // Initial fetch
 fetchStatus();
+
+// (Form handler removed)
