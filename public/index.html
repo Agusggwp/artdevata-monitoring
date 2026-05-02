@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Monitor - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Status Monitor ARTDEVATA</h1>
+            <p class="subtitle">Real-time service monitoring & analytics</p>
+            <div class="last-update">
+                Last updated: <span id="lastUpdate">-</span>
+            </div>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="totalServices">0</div>
+                <div class="stat-label">Total Services</div>
+            </div>
+            <div class="stat-card online">
+                <div class="stat-value" id="onlineServices">0</div>
+                <div class="stat-label">Online</div>
+            </div>
+            <div class="stat-card offline">
+                <div class="stat-value" id="offlineServices">0</div>
+                <div class="stat-label">Offline</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgUptime">100%</div>
+                <div class="stat-label">Avg Uptime</div>
+            </div>
+        </div>
+
+        <div class="services-section">
+            <h2>Services Status & Performance</h2>
+            <div id="servicesList" class="services-list">
+                <!-- Services will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>ARTDEVATA</h3>
+        <p>Professional Web Status Monitoring Solution</p>
+        <p>Real-time monitoring for your critical services</p>
+        <div class="copyright">
+            <p>&copy; 2025 ARTDEVATA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
