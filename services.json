@@ -4,12 +4,17 @@
     "name": "ARTDEVATA",
     "url": "https://artdevata.net/",
     "status": "online",
-    "responseTime": 83,
-    "lastChecked": "2026-05-02T07:22:01.002Z",
+    "responseTime": 76,
+    "lastChecked": "2026-05-02T07:22:30.307Z",
     "uptime": 100,
-    "checks": 28,
+    "checks": 29,
     "failures": 0,
     "history": [
+      {
+        "timestamp": "2026-05-02T07:22:30.307Z",
+        "status": "online",
+        "responseTime": 76
+      },
       {
         "timestamp": "2026-05-02T07:22:01.002Z",
         "status": "online",
@@ -37,12 +42,17 @@
     "name": "PEDRA SAPACE",
     "url": "https://pedracafe.com/",
     "status": "online",
-    "responseTime": 84,
-    "lastChecked": "2026-05-02T07:22:01.005Z",
+    "responseTime": 80,
+    "lastChecked": "2026-05-02T07:22:30.312Z",
     "uptime": 100,
-    "checks": 28,
+    "checks": 29,
     "failures": 0,
     "history": [
+      {
+        "timestamp": "2026-05-02T07:22:30.312Z",
+        "status": "online",
+        "responseTime": 80
+      },
       {
         "timestamp": "2026-05-02T07:22:01.005Z",
         "status": "online",
